@@ -7,7 +7,7 @@ echo "define WORK work_lib" >> ./hdl.var
 # Compile HDL sources
 xmvlog -MESS -linedebug ./*
 # Elaborate compiled sources
-xmlab -MESS -access rwc tb_mux
+xmlab -MESS -access rwc tb_FSM4
 
 # run simulation in CLI mode
-xmsim -MESS tb_mux -gui
+xmsim -MESS tb_FSM4 -gui
