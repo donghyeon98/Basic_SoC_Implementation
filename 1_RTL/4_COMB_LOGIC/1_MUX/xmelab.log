@@ -1,5 +1,5 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Jul 01, 2026 at 00:56:30 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Jul 02, 2026 at 03:52:21 KST
 xmelab
     -MESS
     -access rwc
@@ -9,14 +9,11 @@ xmelab
 		Caching library 'work_lib' ....... Done
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		work_lib.mux:module <0x37ac418d>
-			streams:   1, words:  1404
-		work_lib.tb_mux:module <0x7e5be058>
-			streams:   5, words: 23203
+		work_lib.mux:module <0x1934d993>
+			streams:   1, words:  1411
+		work_lib.tb_mux:module <0x10efc6ba>
+			streams:   6, words: 25135
 	Building instance specific data structures.
-	.i_pwm1(i_pwn1),
-	             |
-xmelab: *W,CSINFI (./tb_mux.v,15|14): implicit wire has no fanin (tb_mux.i_pwn1).
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
@@ -26,7 +23,7 @@ xmelab: *W,CSINFI (./tb_mux.v,15|14): implicit wire has no fanin (tb_mux.i_pwn1)
 		Vectored wires:          1       -
 		Always blocks:           1       1
 		Initial blocks:          1       1
-		Pseudo assignments:      4       4
+		Pseudo assignments:      5       5
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: work_lib.tb_mux:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Jul 01, 2026 at 00:56:30 KST  (total: 00:00:00)
+TOOL:	xmelab(64)	22.03-s012: Exiting on Jul 02, 2026 at 03:52:21 KST  (total: 00:00:00)

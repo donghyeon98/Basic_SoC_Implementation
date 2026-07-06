@@ -1,15 +1,16 @@
 `timescale 1ns / 1ps
 
 module decoder( 
+	// port list
 	i_bcd,
 	o_seg
 );
-
-	input [3:0] i_bcd;
-	output [6:0] o_seg;
+	// port declaration
+	input 	[3:0] i_bcd	;
+	output 	[6:0] o_seg	;
 	
-	reg [6:0] o_seg;
-
+	// modeling
+	reg 	[6:0] o_seg	;
 	always@(*) begin
 		case(i_bcd)
 			4'b0000 : o_seg = 7'b111_1110;

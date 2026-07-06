@@ -11,5 +11,5 @@ compile:
 elab:
 	xmelab -MESS -access rwc tb_{dut_name}
 sim:
-	xmsim -MESS tb_{dut_name}
+	xmsim -MESS tb_{dut_name} -gui
 all: clean set compile elab sim 

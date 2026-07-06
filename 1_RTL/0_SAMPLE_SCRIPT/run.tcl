@@ -10,4 +10,5 @@ xmvlog -MESS -linedebug ./*
 xmlab -MESS -access rwc tb_{dut_name}
 
 # run simulation in CLI mode
-xmsim -MESS tb_{dut_name}
+xmsim -MESS tb_{dut_name} -gui
+

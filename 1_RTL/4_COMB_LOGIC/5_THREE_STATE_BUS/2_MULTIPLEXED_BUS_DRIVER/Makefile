@@ -9,7 +9,7 @@ set:
 compile: 
 	xmvlog -MESS -linedebug ./*v
 elab:
-		xmelab -MESS -access rwc tb_comparator
+		xmelab -MESS -access rwc tb_multiplexed_bus_driver
 sim:
-	xmsim -MESS tb_comparator -gui
+	xmsim -MESS tb_multiplexed_bus_driver -gui
 all: clean set compile elab sim 

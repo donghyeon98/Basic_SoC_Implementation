@@ -7,7 +7,7 @@ echo "define WORK work_lib" >> ./hdl.var
 # Compile HDL sources
 xmvlog -MESS -linedebug ./*
 # Elaborate compiled sources
-xmlab -MESS -access rwc tb_comparator
+xmlab -MESS -access rwc tb_multiplexed_bus_driver
 
 # run simulation in CLI mode
-xmsim -MESS tb_comparator -gui
+xmsim -MESS tb_multiplexed_bus_driver -gui
