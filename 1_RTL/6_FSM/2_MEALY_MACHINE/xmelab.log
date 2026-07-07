@@ -1,5 +1,5 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Jul 07, 2026 at 04:33:38 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Jul 07, 2026 at 20:38:31 KST
 xmelab
     -MESS
     -access rwc
@@ -11,8 +11,8 @@ xmelab
 	Generating native compiled code:
 		work_lib.FSM4:module <0x279c4e85>
 			streams:   5, words:  4307
-		work_lib.tb_FSM4:module <0x797c3003>
-			streams:   5, words:  8556
+		work_lib.tb_FSM4:module <0x238d2119>
+			streams:   5, words:  3727
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -20,10 +20,10 @@ xmelab
 		Modules:                 2       2
 		Registers:               5       5
 		Scalar wires:            4       -
-		Always blocks:           3       3
-		Initial blocks:          1       1
+		Always blocks:           2       2
+		Initial blocks:          2       2
 		Cont. assignments:       1       1
 		Pseudo assignments:      3       3
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: work_lib.tb_FSM4:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Jul 07, 2026 at 04:33:39 KST  (total: 00:00:01)
+TOOL:	xmelab(64)	22.03-s012: Exiting on Jul 07, 2026 at 20:38:31 KST  (total: 00:00:00)
