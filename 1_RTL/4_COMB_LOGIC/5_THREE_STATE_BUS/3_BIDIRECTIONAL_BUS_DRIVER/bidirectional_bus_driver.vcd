@@ -1,0 +1,66 @@
+$date
+    Jul  8, 2026  05:02:12
+$end
+$version
+    TOOL:	xmsim(64)	22.03-s012
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_bidirectional_bus_driver $end
+$var reg      32 !    i_data_to_bus [31:0] $end
+$var reg       1 "    i_send $end
+$var reg       1 #    i_rcv $end
+$var wire     32 $    io_bus_data [31:0] $end
+$var wire     32 %    o_data_from_bus [31:0] $end
+$var reg      32 &    r_bus_drive_data [31:0] $end
+
+$scope module dut $end
+$var wire     32 '    i_data_to_bus [31:0] $end
+$var wire      1 (    i_send  $end
+$var wire      1 )    i_rcv  $end
+$var wire     32 $    io_bus_data [31:0] $end
+$var reg      32 *    o_data_from_bus [31:0] $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b0 !
+0"
+0#
+bz $
+b0 %
+b0 &
+b0 '
+0(
+0)
+b0 *
+$end
+#10000
+b1010 !
+1"
+1(
+b1010 '
+b1010 $
+#20000
+0"
+1#
+b100010 &
+1)
+0(
+b0x0x010 $
+b0x0x010 *
+b0x0x010 %
+b100010 $
+b100010 *
+b100010 %
+#30000
+0#
+0)
+bz $
+b0 *
+b0 %
+#40000

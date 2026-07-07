@@ -1,5 +1,5 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Jul 02, 2026 at 02:04:13 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Jul 08, 2026 at 05:01:51 KST
 xmelab
     -MESS
     -access rwc
@@ -9,7 +9,7 @@ xmelab
 		Caching library 'work_lib' ....... Done
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		work_lib.bidirectional_bus_driver:module <0x7da5a9a6>
+		work_lib.bidirectional_bus_driver:module <0x35702052>
 			streams:   2, words:  1014
 		work_lib.tb_bidirectional_bus_driver:module <0x601b4c82>
 			streams:   7, words:  9350
@@ -28,4 +28,4 @@ xmelab
 		Pseudo assignments:      3       3
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: work_lib.tb_bidirectional_bus_driver:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Jul 02, 2026 at 02:04:13 KST  (total: 00:00:00)
+TOOL:	xmelab(64)	22.03-s012: Exiting on Jul 08, 2026 at 05:01:51 KST  (total: 00:00:00)

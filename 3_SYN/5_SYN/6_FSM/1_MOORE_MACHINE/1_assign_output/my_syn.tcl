@@ -1,0 +1,24 @@
+set_db init_lib_search_path /home/hah001/Basic_SoC_Implementation/3_SYN/1_LIB
+set_db init_hdl_search_path .
+read_libs slow_vdd1v0_basicCells.lib
+read_hdl FSM1.v
+
+elaborate
+
+read_sdc /home/hah001/Basic_SoC_Implementation/3_SYN/2_CONSTRAINTS/sample.sdc
+set_db syn_generic_effort medium
+set_db syn_map_effort medium
+set_db syn_opt_effort medium
+
+syn_generic
+syn_map
+syn_opt
+
+report_timing > ./reports/timing.rpt
+report_power > ./reports/power.rpt
+report_area > ./reports/area.rpt
+report_qor > ./reports/qor.rpt
+
+write_hdl > ./outputs/FSM1_netlist.v
+write_sdc > ./outputs/FSM1_final.sdc
+

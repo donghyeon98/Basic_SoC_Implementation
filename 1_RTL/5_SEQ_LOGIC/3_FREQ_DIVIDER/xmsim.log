@@ -1,5 +1,5 @@
 xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmsim(64)	22.03-s012: Started on Jul 06, 2026 at 19:34:52 KST
+TOOL:	xmsim(64)	22.03-s012: Started on Jul 08, 2026 at 05:16:56 KST
 xmsim
     -MESS
     tb_fdivider
@@ -19,4 +19,4 @@ Simulation complete via $finish(1) at time 210 NS + 0
 ./tb_fdivider.v:26 		$finish;
 xcelium> ^C
 xcelium> exit
-TOOL:	xmsim(64)	22.03-s012: Exiting on Jul 06, 2026 at 19:50:48 KST  (total: 00:15:56)
+TOOL:	xmsim(64)	22.03-s012: Exiting on Jul 08, 2026 at 05:17:22 KST  (total: 00:00:26)
