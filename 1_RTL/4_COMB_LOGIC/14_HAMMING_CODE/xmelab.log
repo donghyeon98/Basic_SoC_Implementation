@@ -1,0 +1,32 @@
+xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	22.03-s012: Started on Aug 18, 2026 at 09:30:25 KST
+xmelab
+    -MESS
+    -access rwc
+    tb_HAMMING_CODE
+
+	Elaborating the design hierarchy:
+		Caching library 'work_lib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work_lib.Hamming_Code_Decoder:module <0x3ca637e8>
+			streams:  25, words:  9662
+		work_lib.Hamming_Code_Encoder:module <0x2f1edca8>
+			streams:  14, words:  3573
+		work_lib.tb_HAMMING_CODE:module <0x3d62c046>
+			streams:  11, words: 13133
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 3       3
+		Registers:              17      17
+		Scalar wires:           31       -
+		Vectored wires:          9       -
+		Always blocks:           4       4
+		Initial blocks:          3       3
+		Cont. assignments:      18      25
+		Pseudo assignments:      7       7
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work_lib.tb_HAMMING_CODE:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Aug 18, 2026 at 09:30:26 KST  (total: 00:00:01)

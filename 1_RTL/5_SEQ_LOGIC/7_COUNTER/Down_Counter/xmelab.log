@@ -1,0 +1,32 @@
+xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	22.03-s012: Started on Aug 14, 2026 at 22:40:12 KST
+xmelab
+    -MESS
+    -access rwc
+    tb_Down_Counter
+
+	Elaborating the design hierarchy:
+		Caching library 'work_lib' ....... Done
+        .count(count));
+                   |
+xmelab: *W,CUVMPW (./tb_Down_Counter.v,13|19): port sizes differ in port connection(1/4) for the instance(tb_Down_Counter) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work_lib.Down_Counter:module <0x59412923>
+			streams:   3, words:  1386
+		work_lib.tb_Down_Counter:module <0x2eef8fb2>
+			streams:   5, words:  4075
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               4       4
+		Scalar wires:            3       -
+		Expanded wires:          4       1
+		Always blocks:           1       1
+		Initial blocks:          2       2
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work_lib.tb_Down_Counter:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Aug 14, 2026 at 22:40:12 KST  (total: 00:00:00)

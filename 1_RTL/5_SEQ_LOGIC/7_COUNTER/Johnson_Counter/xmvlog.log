@@ -1,0 +1,15 @@
+xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	22.03-s012: Started on Aug 15, 2026 at 00:21:58 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./Johnson_Counter.v
+    ./tb_Johnson_Counter.v
+
+file: ./Johnson_Counter.v
+	module work_lib.Johnson_Counter
+		errors: 0, warnings: 0
+file: ./tb_Johnson_Counter.v
+	module work_lib.tb_Johnson_Counter
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Aug 15, 2026 at 00:21:58 KST  (total: 00:00:00)

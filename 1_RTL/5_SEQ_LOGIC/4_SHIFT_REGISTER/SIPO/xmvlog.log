@@ -1,0 +1,15 @@
+xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	22.03-s012: Started on Aug 15, 2026 at 02:44:37 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./SIPO.v
+    ./tb_SIPO.v
+
+file: ./SIPO.v
+	module work_lib.SIPO
+		errors: 0, warnings: 0
+file: ./tb_SIPO.v
+	module work_lib.tb_SIPO
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Aug 15, 2026 at 02:44:37 KST  (total: 00:00:00)

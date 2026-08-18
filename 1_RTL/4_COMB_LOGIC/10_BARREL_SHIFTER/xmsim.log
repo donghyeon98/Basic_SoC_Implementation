@@ -1,0 +1,22 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Aug 18, 2026 at 04:55:02 KST
+xmsim
+    -MESS
+    tb_BARREL_SHIFTER
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_BARREL_SHIFTER.data_out tb_BARREL_SHIFTER.data_in tb_BARREL_SHIFTER.shift_amt
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 60 NS + 0
+./tb_BARREL_SHIFTER.v:23 		$finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Aug 18, 2026 at 05:06:33 KST  (total: 00:11:31)

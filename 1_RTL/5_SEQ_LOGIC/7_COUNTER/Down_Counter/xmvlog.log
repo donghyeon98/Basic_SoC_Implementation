@@ -1,0 +1,15 @@
+xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	22.03-s012: Started on Aug 14, 2026 at 22:40:12 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./Down_Counter.v
+    ./tb_Down_Counter.v
+
+file: ./Down_Counter.v
+	module work_lib.Down_Counter
+		errors: 0, warnings: 0
+file: ./tb_Down_Counter.v
+	module work_lib.tb_Down_Counter
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Aug 14, 2026 at 22:40:12 KST  (total: 00:00:00)

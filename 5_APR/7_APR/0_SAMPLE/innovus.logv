@@ -1,0 +1,66 @@
+[07/08 19:47:58      0s] 
+[07/08 19:47:58      0s] Cadence Innovus(TM) Implementation System.
+[07/08 19:47:58      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[07/08 19:47:58      0s] 
+[07/08 19:47:58      0s] Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+[07/08 19:47:58      0s] Options:	-stylus 
+[07/08 19:47:58      0s] Date:		Wed Jul  8 19:47:58 2026
+[07/08 19:47:58      0s] Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+[07/08 19:47:58      0s] OS:		CentOS Linux 7 (Core)
+[07/08 19:47:58      0s] 
+[07/08 19:47:58      0s] License:
+[07/08 19:47:58      0s] 		[19:47:58.163345] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+[07/08 19:47:58      0s] 
+[07/08 19:47:58      0s] 		invs	Innovus Implementation System	22.1	Denied
+[07/08 19:47:58      0s] 		invsb	Innovus Implementation System Basic	22.1	checkout succeeded
+[07/08 19:47:58      0s] 		4 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[07/08 19:48:00      1s] **ERROR: (IMPOAX-8053):	Could not open shared library libinnovusoax22.so : liboaPrivateCDS.so: cannot open shared object file: No such file or directory.
+[07/08 19:48:00      1s] **ERROR: (IMPOAX-8053):	Could not open shared library libcdsSkillPcell.so : /tools/cadence/DDI221/INNOVUS221/tools.lnx86/innovus/bin/64bit/../../../lib/64bit/libcdsSkillPcell.so: undefined symbol: _ZTIN12OpenAccess_413oaFSComponentE.
+[07/08 19:48:00      1s] **ERROR: (IMPOAX-8033):	OpenAccess features will be disabled in this session.
+[07/08 19:48:14     15s] 
+[07/08 19:48:14     15s] 
+[07/08 19:48:21     22s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v22.17-s086_1 (64bit) 09/24/2024 10:51 (Linux 3.10.0-693.el7.x86_64)
+[07/08 19:48:24     25s] @(#)CDS: NanoRoute 22.17-s086_1 NR240905-1647/22_17-UB (database version 18.20.629) {superthreading v2.20}
+[07/08 19:48:24     25s] @(#)CDS: AAE 22.17-s013 (64bit) 09/24/2024 (Linux 3.10.0-693.el7.x86_64)
+[07/08 19:48:24     25s] @(#)CDS: CTE 22.17-s017_1 () Sep 12 2024 04:53:54 ( )
+[07/08 19:48:24     25s] @(#)CDS: SYNTECH 22.17-s006_1 () Aug 12 2024 03:52:27 ( )
+[07/08 19:48:24     25s] @(#)CDS: CPE v22.17-s051
+[07/08 19:48:24     25s] @(#)CDS: IQuantus/TQuantus 21.2.2-s369 (64bit) Tue May 7 14:30:42 PDT 2024 (Linux 3.10.0-693.el7.x86_64)
+[07/08 19:48:24     25s] @(#)CDS: OA 22.60-p095 Wed Apr 17 03:30:14 2024
+[07/08 19:48:24     25s] @(#)CDS: SGN 22.20-d001 (02-Jan-2023) (64 bit executable, TkQt5.9.1)
+[07/08 19:48:24     25s] @(#)CDS: RCDB 11.15.0
+[07/08 19:48:24     25s] @(#)CDS: STYLUS 22.15-s003_1 (04/04/2024 05:58 PDT)
+[07/08 19:48:24     25s] @(#)CDS: IntegrityPlanner-22.17-15746 (22.17) (2024-07-03 11:16:10+0800)
+[07/08 19:48:24     25s] Create and set the environment variable TMPDIR to /home/hah001/Basic_SoC_Implementation/5_APR/7_APR/0_SAMPLE/innovus_temp_145644_1663570b-a239-4e69-97c1-009cdd99dbfb_kopo-seongnam_hah001_AoWOqU.
+
+[07/08 19:48:24     25s] Create and set the environment variable TMPDIR to /home/hah001/Basic_SoC_Implementation/5_APR/7_APR/0_SAMPLE/innovus_temp_145644_1663570b-a239-4e69-97c1-009cdd99dbfb_kopo-seongnam_hah001_AoWOqU.
+[07/08 19:48:24     25s] 
+[07/08 19:48:24     25s] Change the soft stacksize limit to 0.2%RAM (770 mbytes). Set global soft_stack_size_limit to change the value.
+[07/08 19:48:26     26s] [INFO] Loading PVS 20.11 fill procedures
+[07/08 19:48:28     28s] 
+[07/08 19:48:28     28s] **INFO:  MMMC transition support version v31-84 
+[07/08 19:48:28     28s] 
+[07/08 19:48:32     31s] @innovus 1> **ERROR: (IMPOAX-820):	The OpenAccess (OA) features are disabled in the current session of Innovus because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Innovus either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+[07/08 19:49:45     35s] 
+[07/08 19:49:45     35s] **ERROR: (IMPOAX-850):	getG2Libs command cannot be run as OpenAccess features are disabled in this session.
+[07/08 19:49:45     35s] **ERROR: (IMPQTF-4044):	Error occurs when '::Rda_Design::Input::update' is executed with the error message: ''. This is probably an inner GUI action error. Use the TCL command directly instead of the GUI interactive.
+[07/08 19:53:04     46s] 
+[07/08 19:53:04     46s] --------------------------------------------------------------------------------
+[07/08 19:53:04     46s] Exiting Innovus on Wed Jul  8 19:53:04 2026
+[07/08 19:53:04     46s]   Total CPU time:     0:00:47
+[07/08 19:53:04     46s]   Total real time:    0:05:08
+[07/08 19:53:04     46s]   Peak memory (main): 1341.46MB
+[07/08 19:53:04     46s] 
+[07/08 19:53:04     46s] 
+[07/08 19:53:04     46s] *** Memory Usage v#1 (Current mem = 1622.238M, initial mem = 662.375M) ***
+[07/08 19:53:04     46s] 
+[07/08 19:53:04     46s] *** Summary of all messages that are not suppressed in this session:
+[07/08 19:53:04     46s] Severity  ID               Count  Summary                                  
+[07/08 19:53:04     46s] ERROR     IMPOAX-820           1  The OpenAccess (OA) features are disable...
+[07/08 19:53:04     46s] ERROR     IMPOAX-850           1  %s command cannot be run as OpenAccess f...
+[07/08 19:53:04     46s] ERROR     IMPOAX-8033          1  OpenAccess features will be disabled in ...
+[07/08 19:53:04     46s] ERROR     IMPOAX-8053          2  Could not open shared library %s : %s.   
+[07/08 19:53:04     46s] ERROR     IMPQTF-4044          1  Error occurs when '%s' is executed with ...
+[07/08 19:53:04     46s] *** Message Summary: 0 warning(s), 6 error(s)
+[07/08 19:53:04     46s] 
+[07/08 19:53:04     46s] --- Ending "Innovus" (totcpu=0:00:46.2, real=0:05:06, mem=1622.2M) ---

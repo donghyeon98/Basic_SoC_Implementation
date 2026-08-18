@@ -1,0 +1,29 @@
+xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	22.03-s012: Started on Aug 14, 2026 at 23:52:52 KST
+xmelab
+    -MESS
+    -access rwc
+    tb_BCD_Counter
+
+	Elaborating the design hierarchy:
+		Caching library 'work_lib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work_lib.BCD_Counter:module <0x2a6f8c9e>
+			streams:   6, words:  2465
+		work_lib.tb_BCD_Counter:module <0x47de44c3>
+			streams:   6, words:  8218
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               5       5
+		Scalar wires:            4       -
+		Vectored wires:          1       -
+		Always blocks:           1       1
+		Initial blocks:          2       2
+		Pseudo assignments:      4       4
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work_lib.tb_BCD_Counter:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Aug 14, 2026 at 23:52:52 KST  (total: 00:00:00)

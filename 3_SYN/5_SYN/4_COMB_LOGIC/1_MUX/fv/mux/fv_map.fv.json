@@ -231,20 +231,20 @@
 "object":"/libraries/slow_vdd1v0",
 "type":"library"},
 {"index": "1", 
- "date": "Tue Jul 07 21:09:33 UTC 2026",
- "seconds": 1783458573.652099,
+ "date": "Mon Aug 03 11:55:59 UTC 2026",
+ "seconds": 1785758159.8375258,
  "netlist": "fv/mux/fv_map.v.gz", 
  "netlist_exists": "1", 
  "netlist_normalize": "/home/hah001/Basic_SoC_Implementation/3_SYN/5_SYN/4_COMB_LOGIC/1_MUX/fv/mux/fv_map.v.gz", 
- "netlist_mtime": "1783458572", 
- "netlist_timestamp": "Tue Jul 07 21:09:32 UTC 2026", 
- "netlist_size": "323", 
- "netlist_cksum": "3294567941", 
+ "netlist_mtime": "1785758158", 
+ "netlist_timestamp": "Mon Aug 03 11:55:58 UTC 2026", 
+ "netlist_size": "321", 
+ "netlist_cksum": "3507365153", 
  "design_name": "mux", 
  "synth_workdir": "/home/hah001/Basic_SoC_Implementation/3_SYN/5_SYN/4_COMB_LOGIC/1_MUX", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 1.216127 
+ "write_verif_file_runtime": 1.73139 
  }
 ]

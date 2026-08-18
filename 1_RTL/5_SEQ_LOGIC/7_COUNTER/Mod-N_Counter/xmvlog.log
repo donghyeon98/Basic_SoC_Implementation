@@ -1,0 +1,15 @@
+xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	22.03-s012: Started on Aug 15, 2026 at 01:10:36 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./Mod_N_Counter.v
+    ./tb_Mod_N_Counter.v
+
+file: ./Mod_N_Counter.v
+	module work_lib.Mod_N_Counter
+		errors: 0, warnings: 0
+file: ./tb_Mod_N_Counter.v
+	module work_lib.tb_Mod_N_Counter
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Aug 15, 2026 at 01:10:36 KST  (total: 00:00:00)

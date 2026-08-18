@@ -1,0 +1,33 @@
+xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	22.03-s012: Started on Aug 14, 2026 at 07:44:26 KST
+xmelab
+    -MESS
+    -access rwc
+    tb_Adder_Subtractor
+
+	Elaborating the design hierarchy:
+		Caching library 'work_lib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work_lib.Full_Adder:module <0x5a585a1d>
+			streams:   1, words:  3909
+		work_lib.Adder_Subtractor:module <0x50d4de03>
+			streams:   1, words:   504
+		work_lib.tb_Adder_Subtractor:module <0x42c253fb>
+			streams:   4, words:  2983
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 6       3
+		Registers:              14       8
+		Scalar wires:            9       -
+		Expanded wires:          8       2
+		Vectored wires:          1       -
+		Always blocks:           4       1
+		Initial blocks:          1       1
+		Cont. assignments:       1       1
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work_lib.tb_Adder_Subtractor:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Aug 14, 2026 at 07:44:26 KST  (total: 00:00:00)

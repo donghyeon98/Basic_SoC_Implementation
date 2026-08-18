@@ -1,0 +1,146 @@
+$date
+    Aug 12, 2026  20:55:36
+$end
+$version
+    TOOL:	xmsim(64)	22.03-s012
+$end
+$timescale
+    1 ps
+$end
+
+$scope module tb_mux $end
+$var reg       1 !    i_tx0 $end
+$var reg       1 "    i_rx0 $end
+$var reg       1 #    i_pwm1 $end
+$var reg       1 $    i_other_signal $end
+$var reg       2 %    i_select [1:0] $end
+$var wire      1 &    o_data_out  $end
+
+$scope module dut $end
+$var wire      1 '    i_tx0  $end
+$var wire      1 (    i_rx0  $end
+$var wire      1 )    i_pwm1  $end
+$var wire      1 *    i_other_signal  $end
+$var wire      2 +    i_select [1:0] $end
+$var reg       1 ,    o_data_out $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+0!
+0"
+0#
+0$
+b0 %
+0&
+0'
+0(
+0)
+0*
+b0 +
+0,
+$end
+#10000
+1!
+1'
+1,
+1&
+#20000
+0!
+1"
+1(
+0'
+0,
+0&
+#30000
+0"
+1#
+1)
+0(
+#40000
+0#
+1$
+1*
+0)
+#50000
+b1 %
+0$
+0*
+b1 +
+#60000
+1!
+1'
+#70000
+0!
+1"
+1(
+0'
+1,
+1&
+#80000
+0"
+1#
+1)
+0(
+0,
+0&
+#90000
+0#
+1$
+1*
+0)
+#100000
+b10 %
+0$
+0*
+b10 +
+#110000
+1!
+1'
+#120000
+0!
+1"
+1(
+0'
+#130000
+0"
+1#
+1)
+0(
+1,
+1&
+#140000
+0#
+1$
+1*
+0)
+0,
+0&
+#150000
+b11 %
+0$
+0*
+b11 +
+#160000
+1!
+1'
+#170000
+0!
+1"
+1(
+0'
+#180000
+0"
+1#
+1)
+0(
+#190000
+0#
+1$
+1*
+0)
+1,
+1&
+#200000

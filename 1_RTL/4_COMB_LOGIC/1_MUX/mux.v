@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module mux #(parameter N = 4)(
+module mux(
 	// port list
 	i_tx0			,
 	i_rx0			,
@@ -15,7 +15,7 @@ module mux #(parameter N = 4)(
 	input i_rx0				;
 	input i_pwm1				;
 	input i_other_signal			;
-	input [$clog2(N)-1:0] i_select		;	
+	input [1:0] i_select			;	
 	output o_data_out			;
 	
 	// modeling

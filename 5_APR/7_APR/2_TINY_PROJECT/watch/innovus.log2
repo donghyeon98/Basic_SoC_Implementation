@@ -1,0 +1,15 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v22.17-s086_1, built Tue Sep 24 10:51:50 PDT 2024
+Options:	stylus 
+Date:		Tue Aug 18 10:10:27 2026
+Host:		kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB)
+OS:		CentOS Linux 7 (Core)
+
+License:
+		[10:10:27.163161] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+
+**ERROR: (IMPLIC-68):	Unknown argument: stylus.
+	Run "innovus -help" for valid option/argument.

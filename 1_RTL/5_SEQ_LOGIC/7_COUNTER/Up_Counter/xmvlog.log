@@ -1,0 +1,15 @@
+xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	22.03-s012: Started on Aug 14, 2026 at 22:42:02 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./Up_Counter.v
+    ./tb_Up_Counter.v
+
+file: ./Up_Counter.v
+	module work_lib.Up_Counter
+		errors: 0, warnings: 0
+file: ./tb_Up_Counter.v
+	module work_lib.tb_Up_Counter
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Aug 14, 2026 at 22:42:02 KST  (total: 00:00:00)
