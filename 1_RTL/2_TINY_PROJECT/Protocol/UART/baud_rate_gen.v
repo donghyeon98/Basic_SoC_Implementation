@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
 module baud_rate_gen # (
-parameter FPGA_CLK = 10_000_000, 
+parameter FPGA_CLK = 100_000_000, 
 parameter BAUD_RATE = 115200
 )(
 	clk,

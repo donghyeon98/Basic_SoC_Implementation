@@ -1,5 +1,5 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Sep 07, 2026 at 03:59:25 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Sep 08, 2026 at 03:53:07 KST
 xmelab
     -MESS
     -access rwc
@@ -11,22 +11,22 @@ xmelab
 	Generating native compiled code:
 		work_lib.Sync_FIFO:module <0x6b155636>
 			streams:  10, words:  4166
-		work_lib.uart_tx:module <0x0d250e9e>
-			streams:  23, words:  9719
-		work_lib.tb_uart_tx:module <0x75f9db3c>
-			streams:   7, words:  3451
+		work_lib.uart_tx:module <0x0ffd0a2d>
+			streams:  24, words: 10478
+		work_lib.tb_uart_tx:module <0x5464e05b>
+			streams:  19, words: 21820
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 3       3
-		Registers:              16      16
+		Registers:              25      25
 		Scalar wires:           10       -
 		Vectored wires:          2       -
-		Always blocks:           5       5
-		Initial blocks:          2       2
+		Always blocks:           7       7
+		Initial blocks:          4       4
 		Cont. assignments:       2       3
 		Pseudo assignments:      7       7
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: work_lib.tb_uart_tx:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 07, 2026 at 03:59:25 KST  (total: 00:00:00)
+TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 08, 2026 at 03:53:07 KST  (total: 00:00:00)

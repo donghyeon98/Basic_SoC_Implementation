@@ -8,11 +8,8 @@ module tb_uart_top;
 
         reg clk                                       ;
         reg rst_n                                     ;
-        reg os_tick                                   ;
-        reg baud_tick                                 ;
         reg [DATA_WIDTH-1:0] tx_data                  ;
         reg tx_valid                                  ;
-        reg rx                                        ;
         reg rx_ready                                  ;
         wire rx_valid                                 ;
         wire [DATA_WIDTH-1:0] rx_data                 ;
@@ -24,7 +21,7 @@ module tb_uart_top;
         wire tx_ready                                 ;
         wire tx_full                                  ;
         wire tx_empty                                 ;
-        wire tx                                       ;
+        wire tx_line                                  ;
 
 
 	uart_top #(.FPGA_CLK   = 10_000_000	      ,
@@ -33,11 +30,9 @@ module tb_uart_top;
 	           .DEPTH      = 16) dut	      (	
          .clk(clk)                                    ,
          .rst_n(rst_n)                                ,
-         .os_tick9os_tick)                            ,
-         .baud_tick(baud_tick)                        ,
          .tx_data(tx_data)                            ,
          .tx_valid(tx_valid)                          ,
-         .rx(rx)                                      ,
+         .rx(tx_line)                                 ,
          .rx_ready(rx_ready)                          ,
          .rx_valid(rx_valid)                          ,
          .rx_data(rx_data)                            ,
@@ -49,7 +44,7 @@ module tb_uart_top;
          .tx_ready(tx_ready)                          ,
          .tx_full(tx_full)                            ,
          .tx_empty(tx_empty)                          ,
-         .tx(tx))				      ;
+         .tx(tx_line))				      ;
 
 	initial begin
 		clk = 0				      ;

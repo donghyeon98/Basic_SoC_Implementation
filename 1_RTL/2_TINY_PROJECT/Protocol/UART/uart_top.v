@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps 
 
 module uart_top #(
-parameter FPGA_CLK = 10_000_000,
+parameter FPGA_CLK = 100_000_000,
 parameter BAUD_RATE = 115200,
 parameter DATA_WIDTH = 8,
 parameter DEPTH = 16)
@@ -46,13 +46,13 @@ parameter DEPTH = 16)
 	wire os_tick					;
 	wire baud_tick					;
 
-	baud_rate_gen #(.FPGA_CLK(10_000_000), .BAUD_RATE(9600)) baud(     // simulation FPGA 640 BAUD 10
+	baud_rate_gen #(.FPGA_CLK(FPGA_CLK), .BAUD_RATE(BAUD_RATE)) baud(     // simulation FPGA 640 BAUD 10
 	.clk(clk)					,
         .rst_n(rst_n)					,
         .os_tick(os_tick)				,
         .baud_tick(baud_tick))				;
 
-	uart_tx #(.DATA_WIDTH(8), .DEPTH(16)) u_tx(
+	uart_tx #(.DATA_WIDTH(DATA_WIDTH), .DEPTH(DEPTH)) u_tx(
 	.clk(clk)					,
 	.rst_n(rst_n)					,
 	.baud_tick(baud_tick)				,
@@ -63,7 +63,7 @@ parameter DEPTH = 16)
         .tx_empty(tx_empty)                             ,
         .tx(tx))					;
 
-	uart_rx #(.DATA_WIDTH(8), .DEPTH(16)) u_rx(
+	uart_rx #(.DATA_WIDTH(DATA_WIDTH), .DEPTH(DEPTH)) u_rx(
 	.clk(clk)                                	,
         .rst_n(rst_n)                            	,
         .os_tick(os_tick)                        	,

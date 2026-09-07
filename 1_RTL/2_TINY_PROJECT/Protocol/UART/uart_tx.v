@@ -79,7 +79,7 @@ parameter DEPTH = 16)
 					end
 					else    next_state = IDLE						;
 				  end
-			default : 					              next_state = IDLE		;
+			default : next_state = IDLE								;
 		endcase 
 	end
 
