@@ -7,8 +7,8 @@ echo "define WORK work_lib" >> ./hdl.var
 # Compile HDL sources
 xmvlog -MESS -linedebug ./*
 # Elaborate compiled sources
-xmlab -MESS -access rwc tb_CRC_COMB
+xmlab -MESS -access rwc tb_Cyclic_Redundancy_Check_Combinational
 
 # run simulation in CLI mode
-xmsim -MESS tb_CRC_COMB -gui
+xmsim -MESS tb_Cyclic_Redundancy_Check_Combinational -gui
 

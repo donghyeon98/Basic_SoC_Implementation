@@ -1,0 +1,9 @@
+xrun(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s012: Started on Aug 19, 2026 at 01:48:58 KST
+xrun
+	-compile
+	Parity_Checker.v
+file: Parity_Checker.v
+	module work_lib.Parity_Checker:v
+		errors: 0, warnings: 0
+TOOL:	xrun(64)	22.03-s012: Exiting on Aug 19, 2026 at 01:48:58 KST  (total: 00:00:00)

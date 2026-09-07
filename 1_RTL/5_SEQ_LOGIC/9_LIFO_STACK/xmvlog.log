@@ -1,0 +1,15 @@
+xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	22.03-s012: Started on Aug 25, 2026 at 04:34:48 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./LIFO_STACK.v
+    ./tb_LIFO_STACK.v
+
+file: ./LIFO_STACK.v
+	module work_lib.LIFO_STACK
+		errors: 0, warnings: 0
+file: ./tb_LIFO_STACK.v
+	module work_lib.tb_LIFO_STACK
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Aug 25, 2026 at 04:34:48 KST  (total: 00:00:00)

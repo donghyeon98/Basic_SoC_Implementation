@@ -1,5 +1,5 @@
 xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmsim(64)	22.03-s012: Started on Aug 18, 2026 at 10:45:06 KST
+TOOL:	xmsim(64)	22.03-s012: Started on Sep 03, 2026 at 06:39:29 KST
 xmsim
     -MESS
     tb_Sync_FIFO
@@ -10,7 +10,13 @@ xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mod
 -------------------------------------
 Relinquished control to SimVision...
 xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_Sync_FIFO.clk tb_Sync_FIFO.empty tb_Sync_FIFO.full tb_Sync_FIFO.rd_data tb_Sync_FIFO.rd_en tb_Sync_FIFO.rst_n tb_Sync_FIFO.wr_data tb_Sync_FIFO.wr_en
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 360 NS + 0
+./tb_Sync_FIFO.v:58 		$finish					;
 xcelium> ^C
 xcelium> exit
-xmsim: *W,NORUNCMD: No 'run' command issued.
-TOOL:	xmsim(64)	22.03-s012: Exiting on Aug 18, 2026 at 10:45:18 KST  (total: 00:00:12)
+TOOL:	xmsim(64)	22.03-s012: Exiting on Sep 03, 2026 at 06:40:34 KST  (total: 00:01:05)

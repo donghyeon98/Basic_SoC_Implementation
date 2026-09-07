@@ -10,7 +10,7 @@ set:
 compile: 
 	xmvlog -MESS -linedebug ./*v
 elab:
-	xmelab -MESS -access rwc tb_CRC_COMB
+	xmelab -MESS -access rwc tb_Cyclic_Redundancy_Check_Combinational
 sim:
-	xmsim -MESS tb_CRC_COMB -gui
+	xmsim -MESS tb_Cyclic_Redundancy_Check_Combinational -gui
 all: clean set compile elab sim 

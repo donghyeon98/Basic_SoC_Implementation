@@ -1,0 +1,22 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Aug 25, 2026 at 04:34:48 KST
+xmsim
+    -MESS
+    tb_LIFO_STACK
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_LIFO_STACK.clk tb_LIFO_STACK.data_in tb_LIFO_STACK.data_out tb_LIFO_STACK.empty tb_LIFO_STACK.full tb_LIFO_STACK.pop tb_LIFO_STACK.push tb_LIFO_STACK.rst_n
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 340 NS + 0
+./tb_LIFO_STACK.v:60 		$finish						;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Aug 25, 2026 at 04:35:49 KST  (total: 00:01:01)

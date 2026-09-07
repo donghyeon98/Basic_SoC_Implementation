@@ -1,0 +1,28 @@
+xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	22.03-s012: Started on Sep 07, 2026 at 02:07:39 KST
+xmelab
+    -MESS
+    -access rwc
+    tb_baud_rate_gen
+
+	Elaborating the design hierarchy:
+		Caching library 'work_lib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work_lib.baud_rate_gen:module <0x756227ed>
+			streams:  13, words:  4666
+		work_lib.tb_baud_rate_gen:module <0x77541a0f>
+			streams:   4, words:  2340
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               6       6
+		Scalar wires:            4       -
+		Always blocks:           1       1
+		Initial blocks:          2       2
+		Pseudo assignments:      2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work_lib.tb_baud_rate_gen:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 07, 2026 at 02:07:40 KST  (total: 00:00:01)

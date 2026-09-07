@@ -1,0 +1,15 @@
+xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	22.03-s012: Started on Sep 07, 2026 at 02:07:39 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./baud_rate_gen.v
+    ./tb_baud_gen_rate.v
+
+file: ./baud_rate_gen.v
+	module work_lib.baud_rate_gen
+		errors: 0, warnings: 0
+file: ./tb_baud_gen_rate.v
+	module work_lib.tb_baud_rate_gen
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Sep 07, 2026 at 02:07:39 KST  (total: 00:00:00)

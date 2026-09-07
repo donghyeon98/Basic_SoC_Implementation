@@ -1,0 +1,23 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Aug 25, 2026 at 03:16:56 KST
+xmsim
+    -MESS
+    tb_LFSR
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_LFSR.clk tb_LFSR.q tb_LFSR.rst_n
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 110 NS + 0
+./tb_LFSR.v:22 		$finish			;
+xcelium> scope -set tb_LFSR.dut
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Aug 25, 2026 at 03:19:37 KST  (total: 00:02:41)

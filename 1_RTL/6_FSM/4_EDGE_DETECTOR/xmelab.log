@@ -1,0 +1,29 @@
+xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	22.03-s012: Started on Aug 25, 2026 at 04:56:58 KST
+xmelab
+    -MESS
+    -access rwc
+    tb_Edge_Detector
+
+	Elaborating the design hierarchy:
+		Caching library 'work_lib' ....... Done
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		work_lib.Edge_Detector:module <0x4a58dec9>
+			streams:   7, words:  2254
+		work_lib.tb_Edge_Detector:module <0x55196aa7>
+			streams:   5, words:  3290
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:               5       5
+		Scalar wires:            5       -
+		Always blocks:           1       1
+		Initial blocks:          2       2
+		Cont. assignments:       2       2
+		Pseudo assignments:      3       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: work_lib.tb_Edge_Detector:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Aug 25, 2026 at 04:56:58 KST  (total: 00:00:00)

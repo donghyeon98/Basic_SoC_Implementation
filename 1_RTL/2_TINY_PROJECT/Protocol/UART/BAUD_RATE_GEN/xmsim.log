@@ -1,0 +1,22 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Sep 07, 2026 at 02:07:40 KST
+xmsim
+    -MESS
+    tb_baud_rate_gen
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_baud_rate_gen.baud_tick tb_baud_rate_gen.clk tb_baud_rate_gen.os_tick tb_baud_rate_gen.rst_n
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 1010 NS + 0
+./tb_baud_gen_rate.v:28 		$finish;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Sep 07, 2026 at 02:10:51 KST  (total: 00:03:11)

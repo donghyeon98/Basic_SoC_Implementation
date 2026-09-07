@@ -8,8 +8,8 @@ module Sync_FIFO #(
 	rst_n								,
 	wr_en								,	
 	rd_en								,
-	data_in								,
-	data_out							,
+	wr_data								,
+	rd_data								,
 	full								,
 	empty		
 );
@@ -20,16 +20,16 @@ module Sync_FIFO #(
 	input rst_n							;	
 	input wr_en							;
 	input rd_en							;
-	input [DATA_WIDTH-1:0] data_in					;
-	output [DATA_WIDTH-1:0] data_out				;
+	input [DATA_WIDTH-1:0]  wr_data					;
+	output [DATA_WIDTH-1:0] rd_data					;
 	output full							;
 	output empty							;
 	
-	reg [DATA_WIDTH-1:0] data_out					;
+	reg [DATA_WIDTH-1:0] rd_data					;
 
-	reg [DATA_WIDTH-1:0] mem [0:DEPTH-1]  			;
-	reg [DATA_WIDTH-1:0] wr_ptr					;
-	reg [DATA_WIDTH-1:0] rd_ptr					;
+	reg [DATA_WIDTH-1:0] mem [0:DEPTH-1]  				;
+	reg [ADDR_WIDTH:0] wr_ptr					;
+	reg [ADDR_WIDTH:0] rd_ptr					;
 
 	assign full  = (wr_ptr[ADDR_WIDTH] != rd_ptr[ADDR_WIDTH]) &&
                    (wr_ptr[ADDR_WIDTH-1:0] == rd_ptr[ADDR_WIDTH-1:0])	;
@@ -40,7 +40,7 @@ module Sync_FIFO #(
 	always@(posedge clk or negedge rst_n) begin
 		if(!rst_n) wr_ptr <= 0;
 		else if(wr_en && !full) begin
-			mem[wr_ptr[ADDR_WIDTH-1:0]] <= data_in		;
+			mem[wr_ptr[ADDR_WIDTH-1:0]] <= wr_data		;
             		wr_ptr                      <= wr_ptr + 1	;
 		end
 	end
@@ -49,7 +49,7 @@ module Sync_FIFO #(
 	always@(posedge clk or negedge rst_n) begin
         	if(!rst_n) rd_ptr <= 0;
         	else if(rd_en && !empty) begin
-            		data_out <= mem[rd_ptr[ADDR_WIDTH-1:0]]		;
+            		rd_data <= mem[rd_ptr[ADDR_WIDTH-1:0]]		;
             		rd_ptr   <= rd_ptr + 1				;
         	end
    	 end
