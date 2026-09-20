@@ -1,12 +1,12 @@
 xmvlog(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmvlog(64)	22.03-s012: Started on Sep 21, 2026 at 01:09:37 KST
+TOOL:	xmvlog(64)	22.03-s012: Started on Sep 21, 2026 at 01:40:49 KST
 xmvlog
     -MESS
     -linedebug
     ./Sync_FIFO.v
     ./baud_rate_gen.v
-    ./tb_uart_tx.v
-    ./uart_tx.v
+    ./tb_uart_rx.v
+    ./uart_rx.v
 
 file: ./Sync_FIFO.v
 	module work_lib.Sync_FIFO
@@ -14,10 +14,10 @@ file: ./Sync_FIFO.v
 file: ./baud_rate_gen.v
 	module work_lib.baud_rate_gen
 		errors: 0, warnings: 0
-file: ./tb_uart_tx.v
-	module work_lib.tb_uart_tx
+file: ./tb_uart_rx.v
+	module work_lib.tb_uart_rx
 		errors: 0, warnings: 0
-file: ./uart_tx.v
-	module work_lib.uart_tx
+file: ./uart_rx.v
+	module work_lib.uart_rx
 		errors: 0, warnings: 0
-TOOL:	xmvlog(64)	22.03-s012: Exiting on Sep 21, 2026 at 01:09:37 KST  (total: 00:00:00)
+TOOL:	xmvlog(64)	22.03-s012: Exiting on Sep 21, 2026 at 01:40:49 KST  (total: 00:00:00)

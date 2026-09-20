@@ -46,7 +46,7 @@ parameter DEPTH = 16)
 	wire os_tick					;
 	wire baud_tick					;
 
-	baud_rate_gen #(.FPGA_CLK(FPGA_CLK), .BAUD_RATE(BAUD_RATE)) baud(     // simulation FPGA 640 BAUD 10
+	baud_rate_gen #(.FPGA_CLK(FPGA_CLK), .BAUD_RATE(BAUD_RATE)) baud(     
 	.clk(clk)					,
         .rst_n(rst_n)					,
         .os_tick(os_tick)				,

@@ -1,9 +1,9 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Sep 21, 2026 at 01:09:37 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Sep 21, 2026 at 01:40:49 KST
 xmelab
     -MESS
     -access rwc
-    tb_uart_tX
+    tb_uart_rx
 
 	Elaborating the design hierarchy:
 		Caching library 'work_lib' ....... Done
@@ -11,24 +11,24 @@ xmelab
 	Generating native compiled code:
 		work_lib.Sync_FIFO:module <0x6b155636>
 			streams:  10, words:  4166
-		work_lib.uart_tx:module <0x0ffd0a2d>
-			streams:  24, words: 10478
-		work_lib.baud_rate_gen:module <0x02ec44f9>
+		work_lib.uart_rx:module <0x3a2ff189>
+			streams:  58, words: 22797
+		work_lib.baud_rate_gen:module <0x53c1507f>
 			streams:  13, words:  4666
-		work_lib.tb_uart_tx:module <0x41531f70>
-			streams:  11, words:  7299
+		work_lib.tb_uart_rx:module <0x6bbc9670>
+			streams:  14, words: 12758
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 4       4
-		Registers:              20      20
-		Scalar wires:           13       -
+		Registers:              31      31
+		Scalar wires:           20       -
 		Vectored wires:          2       -
-		Always blocks:           6       6
+		Always blocks:           7       7
 		Initial blocks:          2       2
-		Cont. assignments:       2       3
-		Pseudo assignments:      8       8
+		Cont. assignments:       6       7
+		Pseudo assignments:      9       9
 		Simulation timescale:  1ps
-	Writing initial simulation snapshot: work_lib.tb_uart_tx:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 21, 2026 at 01:09:37 KST  (total: 00:00:00)
+	Writing initial simulation snapshot: work_lib.tb_uart_rx:module
+TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 21, 2026 at 01:40:49 KST  (total: 00:00:00)

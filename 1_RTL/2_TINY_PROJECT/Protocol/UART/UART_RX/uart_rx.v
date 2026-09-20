@@ -136,21 +136,21 @@ module uart_rx #(parameter DATA_WIDTH = 8,
                         	           rx_parity_bit <= 0;
 				          end		
 				START   : if(os_tick) begin
-					  	if(os_cnt == 4'd7) vote_7 <= rx_sync2;
-						if(os_cnt == 4'd8) vote_8 <= rx_sync2;
+					  	if(sampling_cnt == 4'd7) vote_7 <= rx_sync2;
+						if(sampling_cnt == 4'd8) vote_8 <= rx_sync2;
 					  end
 				DATA    : if(os_tick) begin
-					  	if(os_cnt == 4'd7) vote_7 <= rx_sync2;
-						if(os_cnt == 4'd8) vote_8 <= rx_sync2;
-						if(os_cnt == 4'd9) begin
+					  	if(sampling_cnt == 4'd7) vote_7 <= rx_sync2;
+						if(sampling_cnt == 4'd8) vote_8 <= rx_sync2;
+						if(sampling_cnt == 4'd9) begin
 							rx_data_reg <= {vote_result, rx_data_reg[DATA_WIDTH-1:1]};
 							bit_cnt     <= bit_cnt + 1;
 						end
 					  end
 				PARITY  : if(os_tick) begin
-					  	if(os_cnt == 4'd7) vote_7        <= rx_sync2;
-                                                if(os_cnt == 4'd8) vote_8        <= rx_sync2;
-                                                if(os_cnt == 4'd9) rx_parity_bit <= vote_result;
+					  	if(sampling_cnt == 4'd7) vote_7        <= rx_sync2;
+                                                if(sampling_cnt == 4'd8) vote_8        <= rx_sync2;
+                                                if(sampling_cnt == 4'd9) rx_parity_bit <= vote_result;
 					  end
 				STOP    : begin
 					  	if (os_tick) begin
@@ -169,7 +169,12 @@ module uart_rx #(parameter DATA_WIDTH = 8,
 							end
 						end
 					  end
-				default :		;
+				default : begin
+				          	rx_data_reg   <= 0;
+					  	sampling_cnt  <= 0;
+					  	bit_cnt       <= 0;
+					  	rx_parity_bit <= 0;
+					  end
 			endcase
 		end
 	end	

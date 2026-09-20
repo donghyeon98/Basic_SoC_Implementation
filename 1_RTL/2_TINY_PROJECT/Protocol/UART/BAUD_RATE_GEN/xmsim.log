@@ -1,5 +1,5 @@
 xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmsim(64)	22.03-s012: Started on Sep 07, 2026 at 02:07:40 KST
+TOOL:	xmsim(64)	22.03-s012: Started on Sep 19, 2026 at 05:54:51 KST
 xmsim
     -MESS
     tb_baud_rate_gen
@@ -19,4 +19,4 @@ Simulation complete via $finish(1) at time 1010 NS + 0
 ./tb_baud_gen_rate.v:28 		$finish;
 xcelium> ^C
 xcelium> exit
-TOOL:	xmsim(64)	22.03-s012: Exiting on Sep 07, 2026 at 02:10:51 KST  (total: 00:03:11)
+TOOL:	xmsim(64)	22.03-s012: Exiting on Sep 19, 2026 at 05:56:08 KST  (total: 00:01:17)

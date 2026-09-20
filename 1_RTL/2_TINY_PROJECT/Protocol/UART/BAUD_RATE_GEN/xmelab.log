@@ -1,5 +1,5 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Sep 07, 2026 at 02:07:39 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Sep 19, 2026 at 05:54:51 KST
 xmelab
     -MESS
     -access rwc
@@ -25,4 +25,4 @@ xmelab
 		Pseudo assignments:      2       2
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: work_lib.tb_baud_rate_gen:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 07, 2026 at 02:07:40 KST  (total: 00:00:01)
+TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 19, 2026 at 05:54:51 KST  (total: 00:00:00)

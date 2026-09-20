@@ -70,8 +70,7 @@ parameter DEPTH = 16)
 					next_state = START							; 
 				  end 	
 			START   : if(baud_tick)                          	      next_state = DATA		;
-			DATA    : if(baud_tick && bit_cnt == DATA_WIDTH-1)            next_state = PARITY	;				      
-			PARITY  : if(baud_tick)                          	      next_state = STOP	        ;
+			DATA    : if(baud_tick && bit_cnt == DATA_WIDTH-1)            next_state = PARITY	;				      			PARITY  : if(baud_tick)                          	      next_state = STOP	        ;
 			STOP    : if(baud_tick) begin
                                   	if(!tx_empty) begin
 						fifo_rd_en = 1'b1						;

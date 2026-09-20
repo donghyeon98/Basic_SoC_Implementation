@@ -1,0 +1,22 @@
+xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	22.03-s012: Started on Sep 20, 2026 at 23:58:21 KST
+xmsim
+    -MESS
+    tb_uart_top
+    -gui
+
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_uart_top.clk tb_uart_top.frame_err tb_uart_top.overrun_err tb_uart_top.parity_err tb_uart_top.rst_n tb_uart_top.rx_data tb_uart_top.rx_empty tb_uart_top.rx_full tb_uart_top.rx_ready tb_uart_top.rx_valid tb_uart_top.tx_data tb_uart_top.tx_empty tb_uart_top.tx_full tb_uart_top.tx_line tb_uart_top.tx_ready tb_uart_top.tx_valid tb_uart_top.dut.u_tx.state tb_uart_top.dut.u_tx.next_state tb_uart_top.dut.u_rx.next_state tb_uart_top.dut.u_rx.state
+Created probe 1
+xcelium> run
+Simulation complete via $finish(1) at time 47265 NS + 0
+./tb_uart_top.v:188                 $finish                                                 ;
+xcelium> ^C
+xcelium> exit
+TOOL:	xmsim(64)	22.03-s012: Exiting on Sep 21, 2026 at 00:04:21 KST  (total: 00:06:00)
