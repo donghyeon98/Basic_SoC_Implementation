@@ -1,5 +1,5 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Sep 21, 2026 at 01:09:37 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Sep 21, 2026 at 19:05:17 KST
 xmelab
     -MESS
     -access rwc
@@ -9,10 +9,10 @@ xmelab
 		Caching library 'work_lib' ....... Done
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		work_lib.Sync_FIFO:module <0x6b155636>
-			streams:  10, words:  4166
-		work_lib.uart_tx:module <0x0ffd0a2d>
-			streams:  24, words: 10478
+		work_lib.Sync_FIFO:module <0x778eaee6>
+			streams:  11, words:  4343
+		work_lib.uart_tx:module <0x24444c16>
+			streams:  26, words: 11318
 		work_lib.baud_rate_gen:module <0x02ec44f9>
 			streams:  13, words:  4666
 		work_lib.tb_uart_tx:module <0x41531f70>
@@ -22,13 +22,13 @@ xmelab
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 4       4
-		Registers:              20      20
+		Registers:              19      19
 		Scalar wires:           13       -
 		Vectored wires:          2       -
-		Always blocks:           6       6
+		Always blocks:           7       7
 		Initial blocks:          2       2
-		Cont. assignments:       2       3
+		Cont. assignments:       3       4
 		Pseudo assignments:      8       8
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: work_lib.tb_uart_tx:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 21, 2026 at 01:09:37 KST  (total: 00:00:00)
+TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 21, 2026 at 19:05:18 KST  (total: 00:00:01)

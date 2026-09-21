@@ -1,5 +1,5 @@
 xmelab(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmelab(64)	22.03-s012: Started on Sep 20, 2026 at 23:58:20 KST
+TOOL:	xmelab(64)	22.03-s012: Started on Sep 22, 2026 at 00:30:12 KST
 xmelab
     -MESS
     -access rwc
@@ -9,28 +9,28 @@ xmelab
 		Caching library 'work_lib' ....... Done
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		work_lib.uart_rx:module <0x3a2ff189>
-			streams:  58, words: 22797
-		work_lib.Sync_FIFO:module <0x0b155453>
-			streams:  10, words:  4166
-		work_lib.baud_rate_gen:module <0x247088c9>
+		work_lib.uart_rx:module <0x622fdc85>
+			streams:  59, words: 23237
+		work_lib.Sync_FIFO:module <0x178eac83>
+			streams:  11, words:  4343
+		work_lib.uart_tx:module <0x24444c16>
+			streams:  26, words: 11318
+		work_lib.baud_rate_gen:module <0x73dfa071>
 			streams:  13, words:  4666
-		work_lib.tb_uart_top:module <0x4b13ddb5>
-			streams:  41, words: 50739
-		work_lib.uart_tx:module <0x341ed0d3>
-			streams:  24, words: 10914
+		work_lib.tb_uart_top:module <0x5a3173cb>
+			streams:  12, words: 11027
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 7       6
-		Registers:              41      37
+		Registers:              39      36
 		Scalar wires:           24       -
 		Vectored wires:          4       -
-		Always blocks:          12      10
+		Always blocks:          14      11
 		Initial blocks:          2       2
-		Cont. assignments:       8       8
+		Cont. assignments:      10       9
 		Pseudo assignments:     10      10
 		Simulation timescale:  1ps
 	Writing initial simulation snapshot: work_lib.tb_uart_top:module
-TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 20, 2026 at 23:58:21 KST  (total: 00:00:01)
+TOOL:	xmelab(64)	22.03-s012: Exiting on Sep 22, 2026 at 00:30:12 KST  (total: 00:00:00)

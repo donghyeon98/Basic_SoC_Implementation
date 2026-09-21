@@ -1,5 +1,5 @@
 xmsim(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
-TOOL:	xmsim(64)	22.03-s012: Started on Sep 21, 2026 at 01:09:37 KST
+TOOL:	xmsim(64)	22.03-s012: Started on Sep 21, 2026 at 19:05:18 KST
 xmsim
     -MESS
     tb_uart_tX
@@ -12,11 +12,11 @@ Relinquished control to SimVision...
 xcelium> 
 xcelium> database -open waves -into waves.shm -default
 Created default SHM database waves
-xcelium> probe -create -shm tb_uart_tx.baud_tick tb_uart_tx.clk tb_uart_tx.rst_n tb_uart_tx.tx tb_uart_tx.tx_data tb_uart_tx.tx_empty tb_uart_tx.tx_full tb_uart_tx.tx_ready tb_uart_tx.tx_valid tb_uart_tx.u_dut.state tb_uart_tx.u_dut.next_state tb_uart_tx.u_dut.bit_cnt tb_uart_tx.u_dut.parity_bit
+xcelium> probe -create -shm tb_uart_tx.baud_tick tb_uart_tx.clk tb_uart_tx.rst_n tb_uart_tx.tx tb_uart_tx.tx_data tb_uart_tx.tx_empty tb_uart_tx.tx_full tb_uart_tx.tx_ready tb_uart_tx.tx_valid tb_uart_tx.u_dut.next_state tb_uart_tx.u_dut.bit_cnt tb_uart_tx.u_dut.state tb_uart_tx.u_dut.tx_parity_bit
 Created probe 1
 xcelium> run
 Simulation complete via $finish(1) at time 2185 NS + 0
 ./tb_uart_tx.v:93                 $finish;
 xcelium> ^C
 xcelium> exit
-TOOL:	xmsim(64)	22.03-s012: Exiting on Sep 21, 2026 at 01:21:23 KST  (total: 00:11:46)
+TOOL:	xmsim(64)	22.03-s012: Exiting on Sep 21, 2026 at 19:06:15 KST  (total: 00:00:57)

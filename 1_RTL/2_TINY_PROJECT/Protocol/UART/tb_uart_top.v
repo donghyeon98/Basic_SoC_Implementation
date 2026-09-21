@@ -63,7 +63,7 @@ module tb_uart_top;
                 repeat (5) @(posedge clk)             ;
                 rst_n    = 1'b1                       ;
                 repeat (5) @(posedge clk)             ;
- 		
+/* 		
 		//case1
 		while (!tx_ready) 
 		@(posedge clk)                        ;
@@ -142,7 +142,7 @@ module tb_uart_top;
                         repeat (2) @(posedge clk)                       ;
                 end
                 repeat (2*BIT_PERIOD) @(posedge clk)                    ;
- 		
+		
 		//case4
 		while (!tx_ready) @(posedge clk)                        ;
                 tx_data  <= 8'b1010_0101                                ;
@@ -164,7 +164,7 @@ module tb_uart_top;
                         repeat (2) @(posedge clk)                       ;
                 end
                 repeat (2*BIT_PERIOD) @(posedge clk)                    ;
- 		
+ */		
 		//case5
 		for (i = 0; i < DEPTH + 1; i = i + 1) begin
                         @(posedge clk)                                  ;

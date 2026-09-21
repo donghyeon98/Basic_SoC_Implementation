@@ -56,9 +56,9 @@ module tb_uart_tx;
 		repeat (5) @(posedge clk);
                 rst_n = 1'b1;
                 repeat (5) @(posedge clk);
-
+		/*
 		// case1 single data		
-		/*while (!tx_ready) @(posedge clk);
+		while (!tx_ready) @(posedge clk);
                 tx_data  <= 8'b0000_1111;
                 tx_valid <= 1'b1;
                 @(posedge clk);
@@ -93,10 +93,5 @@ module tb_uart_tx;
                 $finish;
 
 	end
-	
-/*	initial begin
-                #(BIT_PERIOD * 10 * 11 * 30);
-                $finish;
-        end
-*/
+
 endmodule
